@@ -1,0 +1,689 @@
+/* 全局样式调整 */
+:root {
+    --primary-color: #FF69B4; /* 粉色 */
+    --secondary-color: #FFC0CB; /* 浅粉色 */
+    --text-color: #333;
+    --bg-color: #FFFFFF; /* 白色背景 */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    width: 120%; /* 从 90% 增加到 120% */
+    max-width: 1600px; /* 从 1200px 增加到 1600px */
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* 导航栏样式调整 */
+/*
+header {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 180px;
+    padding-top: 5px;
+}
+*/
+
+/* 修改 logo 容器的样式 */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 120px; /* 调整 logo 大小 */
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 180px;
+    padding-top: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* 主要内容样式 */
+main {
+    padding-top: 0; /* 移除顶部内边距 */
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* 英雄区域样式调整 */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    padding: 0; /* 将原来的 padding: 50px 0 0; 改为 padding: 0; */
+    overflow: hidden;
+    position: relative;
+    padding-top: 40px; /* 添加一些顶部内边距 */
+}
+
+.hero .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    min-height: 80vh;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+    padding-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.hero-features {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.hero-features span {
+    margin-right: 30px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.hero-features i {
+    margin-right: 5px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.5;
+    margin-bottom: -4px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #fff;
+    color: var(--primary-color);
+    padding: 15px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.cta-button:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+/* 特性和优势网格样式调整 */
+.feature-grid, .advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.feature, .advantage {
+    text-align: center;
+    padding: 30px;
+}
+
+.feature i, .advantage i {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    display: block;
+}
+
+.feature h3, .advantage h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.feature img, .advantage img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+
+.feature p, .advantage p {
+    font-size: 1.1rem;
+}
+
+/* 操作流程样式调整 */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.process-step {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.process-icon-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.process-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 用户反馈样式调整 */
+.feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 保持5列 */
+    gap: 20px;
+}
+
+.feedback-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid var(--primary-color);
+}
+
+.feedback-content {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.feedback-author {
+    font-weight: bold;
+}
+
+/* 常见问题样式调整 */
+.faq-grid {
+    display: grid;
+    gap: 30px;
+}
+
+.faq-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* 联系我们样式调整 */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px; /* 增加左右两栏的间距 */
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: var(--secondary-color);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-container {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .hero-image {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+    }
+
+    .feature-grid, .advantages-grid, .process-grid, .feedback-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 页脚样式调整 */
+footer {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* 微信二维码样式 */
+.wechat-qr {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.wechat-qr img {
+    width: 150px;
+    height: 150px;
+}
+
+.wechat-qr p {
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-links {
+        margin-top: 20px;
+    }
+
+    .wechat-qr {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+/* 对话框样式 */
+.dialog {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dialog::before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.dialog:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .dialog::before {
+        display: none;
+    }
+}
+
+/* 图片样式 */
+.feature img, .advantage img, .process-step img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.feedback-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid var(--primary-color);
+    background-color: #f0f0f0; /* 添加背景色 */
+}
+
+/* 在文件末尾添加以下样式 */
+
+.feature-icon-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.feature-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feature {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 如果需要，可以移除或注释掉之前的 .feature img 样式 */
+
+/* 修改常见问题样式 */
+.faq-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.faq-image {
+    flex: 0 0 40%; /* 增加图片的宽度比例，从 30% 增加到 40% */
+    max-width: 400px; /* 增加最大宽度，从 300px 增加到 400px */
+}
+
+.faq-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.faq-grid {
+    flex: 1;
+    display: grid;
+    gap: 30px;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .faq-content {
+        flex-direction: column;
+    }
+
+    .faq-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* 在文件末尾添加以下样式 */
+
+.contact-phone-wechat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.wechat-qr-small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px; /* 添加左边距，与电话号码保持一定距离 */
+}
+
+.wechat-qr-small img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.wechat-qr-small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px; /* 给更大的二维码留出更多空间 */
+}
+
+.wechat-qr-small span {
+    font-size: 12px;
+    color: var(--primary-color);
+}
+
+/* 调整联系信息的布局 */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .contact-phone-wechat {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .wechat-qr-small {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+.feedback-button-container {
+    text-align: center;
+    margin: 40px 0; /* 增加上下边距 */
+}
+
+.feedback-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* 调整主要内容的上边距，为固定定位的 header 留出空间 */
+main {
+    padding-top: 80px; /* 根据 header 的高度调整此值 */
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        width: 100%;
+    }
+}

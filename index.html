@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>橙人爱享 - 成人用品分销平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <style>
+        /* 在 <head> 标签内添加或更新以下样式 */
+        .feedback-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .feedback-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.9em;
+        }
+
+        .feedback-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 2px solid var(--primary-color);
+        }
+
+        .feedback-content {
+            font-style: italic;
+            margin-bottom: 8px;
+            font-size: 0.85em;
+        }
+
+        .feedback-author {
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="logo-container">
+                        <img src="images/2242c728f0a8b08530537ea1fa0d868.png" alt="橙人爱享 Logo" class="logo-img">
+                    </div>
+                    <h1>橙人爱享 - 成人用品分销平台</h1>
+                    <p>轻松开启兼职之旅，实现财富增长</p>
+                    <div class="hero-features">
+                        <span><i class="fas fa-check-circle"></i> 3分钟上线</span>
+                        <span><i class="fas fa-check-circle"></i> 全渠道卖货</span>
+                        <span><i class="fas fa-check-circle"></i> 高额佣金</span>
+                    </div>
+                    <a href="javascript:void(0);" onclick="openMiniProgram()" class="cta-button">立即加入</a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/OIP.png" alt="成人用品分销">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="container">
+            <h2>为什么选择橙人爱享？</h2>
+            <div class="feature-grid">
+                <div class="feature dialog">
+                    <div class="feature-icon-wrapper">
+                        <img src="images/2.jpg" alt="高收益展示" class="feature-icon">
+                    </div>
+                    <h3>高收益展示</h3>
+                    <p>月过万不是梦，轻松实现财务自由！</p>
+                </div>
+                <div class="feature dialog">
+                    <div class="feature-icon-wrapper">
+                        <img src="images/3.jpg" alt="简单操作演示" class="feature-icon">
+                    </div>
+                    <h3>简单操作演示</h3>
+                    <p>零门槛入门，一键开启分销之旅！</p>
+                </div>
+                <div class="feature dialog">
+                    <div class="feature-icon-wrapper">
+                        <img src="images/R37).jpg" alt="用户好评如潮" class="feature-icon">
+                    </div>
+                    <h3>户好评如潮</h3>
+                    <p>98%的用户表示满意，荐身边的朋友！</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages" class="container">
+            <h2>分销优势</h2>
+            <div class="advantages-grid">
+                <div class="advantage dialog">
+                    <div class="feature-icon-wrapper">
+                        <img src="images/呃呃.jpg" alt="丰厚的佣金回报" class="feature-icon">
+                    </div>
+                    <h3>丰厚的佣金回报</h3>
+                    <p>高达30%的佣金比例，让您轻松赚取可观收益！</p>
+                </div>
+                <div class="advantage dialog">
+                    <div class="feature-icon-wrapper">
+                        <img src="images/44.jpg" alt="优质的成人用品货源" class="feature-icon">
+                    </div>
+                    <h3>优质的成人用品货源</h3>
+                    <p>严选优质商品，确保每一件产品都值得信赖。</p>
+                </div>
+                <div class="advantage dialog">
+                    <div class="feature-icon-wrapper">
+                        <img src="images/980.jpg" alt="专业的营销支持" class="feature-icon">
+                    </div>
+                    <h3>专业的营销支持</h3>
+                    <p>提供全方位的营销培训和素材助您快速成为销售高手！</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="container">
+            <h2>操作流程</h2>
+            <div class="process-grid">
+                <div class="process-step dialog">
+                    <div class="process-icon-wrapper">
+                        <img src="images/333.png" alt="注册账号" class="process-icon">
+                    </div>
+                    <h3>1. 注册账号</h3>
+                    <p>填写基本信息，快速完成注册。</p>
+                </div>
+                <div class="process-step dialog">
+                    <div class="process-icon-wrapper">
+                        <img src="images/O226).jpg" alt="选择商品" class="process-icon">
+                    </div>
+                    <h3>2. 选择商品</h3>
+                    <p>浏览商品目录，选择适合您的产品。</p>
+                </div>
+                <div class="process-step dialog">
+                    <div class="process-icon-wrapper">
+                        <img src="images/万23.png" alt="分享接" class="process-icon">
+                    </div>
+                    <h3>3. 分享链接</h3>
+                    <p>复制商链接，分享给潜在客户。</p>
+                </div>
+                <div class="process-step dialog">
+                    <div class="process-icon-wrapper">
+                        <img src="images/6724_r.jpg" alt="赚取佣金" class="process-icon">
+                    </div>
+                    <h3>4. 赚取佣金</h3>
+                    <p>客户下单后，您即可获得相应佣金。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="feedback" class="container">
+            <h2>用户反馈</h2>
+            <div class="feedback-grid">
+                <!-- 反馈项将由 JavaScript 动态插入 -->
+            </div>
+        </section>
+
+        <div class="feedback-button-container">
+            <button onclick="rotateFeedback()" class="feedback-button">查看更多反馈</button>
+        </div>
+
+        <section id="faq" class="container">
+            <h2>常见问题</h2>
+            <div class="faq-content">
+                <div class="faq-image">
+                    <img src="images/客服封面.png" alt="客服封面">
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item dialog">
+                        <h3>分销需要投入资金吗？</h3>
+                        <p>不需要。我们的平台完全免费，您无需预先购买商品支付任何费用。</p>
+                    </div>
+                    <div class="faq-item dialog">
+                        <h3>如何提现收益？</h3>
+                        <p>您可以通过平台提供的多种方式提现，包括银行卡、支付宝等。现快速且安全。</p>
+                    </div>
+                    <div class="faq-item dialog">
+                        <h3>商品质量有问题怎么办？</h3>
+                        <p>我们严格把控商品质量。如遇质量问题，我们提供7天无理由退换货服务。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>联系我们</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> 邮箱：976119348@qq.com</p>
+                    <div class="contact-phone-wechat">
+                        <p><i class="fas fa-phone"></i> 电话：18458429377</p>
+                        <div class="wechat-qr-small">
+                            <img src="images/微信图片_20241018162501.jpg" alt="微信二维码">
+                            <span>扫码添加微信</span>
+                        </div>
+                    </div>
+                    <p><i class="fas fa-comments"></i> 在线客服：点击右下角图标</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" placeholder="您的姓名" required>
+                    <input type="email" name="email" placeholder="您的邮箱" required>
+                    <textarea name="message" placeholder="您的留言" required></textarea>
+                    <button type="submit">提交</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2023 橙人爱享 版权所有</p>
+            <div class="social-links">
+                <a href="#" class="social-icon" id="wechatIcon"><i class="fab fa-weixin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-weibo"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div id="wechatQR" class="wechat-qr">
+            <img src="images/微信图片_20241018162501.jpg" alt="微信二维码">
+            <p>扫描二维码关注我们</p>
+        </div>
+    </footer>
+
+    <script>
+        // 用户反馈数据
+        const feedbacks = [
+            {content: "橙人爱享让我轻松赚到了额外收入，真的很棒！", author: "张小姐, 兼职分销商", avatar: "images/OIP (1).jpg"},
+            {content: "产品质量很好，客户都很满意，销量节节攀升。", author: "李先生, 全职分销商", avatar: "images/OIP (2).jpg"},
+            {content: "平台提供的营销支持非常有帮助，让我快速上手。", author: "王女士, 新手分销商", avatar: "images/OIP (3).jpg"},
+            {content: "客户服务很及时，解决问题非常专业。", author: "先生, 资深分销商", avatar: "images/OIP (4).jpg"},
+            {content: "佣金结算很快，让我对未来更有信心。", author: "陈女士, 兼职分销商", avatar: "images/OIP (5).jpg"},
+            {content: "产品种类丰富，能满足不同客户的需求。", author: "刘先生, 全职分销商", avatar: "images/OIP (6).jpg"},
+            {content: "使用平台后，我的收入翻了一番，非常满意！", author: "周女士, 全职分销商", avatar: "images/OIP (7).jpg"},
+            {content: "平台的培训资源很丰富，让我快速掌握了销售技巧。", author: "吴先生, 新手分销商", avatar: "images/OIP (8).jpg"},
+            {content: "客户对产品的反馈很好，回购率很高。", author: "郑小姐, 兼职分销商", avatar: "images/OIP (9).jpg"},
+            {content: "平台的操作界面很友好，即使是新手也能快速上手。", author: "孙先生, 全职分销商", avatar: "images/OIP (11).jpg"},
+            {content: "产品更新速度快，总能跟上市场潮流。", author: "林女士, 资深分销商", avatar: "images/OIP (12).jpg"},
+            {content: "售后服务很到位，让我对平台更有信心。", author: "黄先生, 兼职分销商", avatar: "images/OIP (13).jpg"}
+        ];
+
+        let currentFeedbackIndex = 0;
+
+        function rotateFeedback() {
+            const feedbackGrid = document.querySelector('.feedback-grid');
+            feedbackGrid.innerHTML = '';
+            for (let i = 0; i < 10; i++) {
+                const index = (currentFeedbackIndex + i) % feedbacks.length;
+                const feedback = feedbacks[index];
+                const feedbackItem = document.createElement('div');
+                feedbackItem.className = 'feedback-item dialog';
+                feedbackItem.innerHTML = `
+                    <img src="${feedback.avatar}" alt="${feedback.author}" class="feedback-avatar">
+                    <p class="feedback-content">"${feedback.content}"</p>
+                    <p class="feedback-author">- ${feedback.author}</p>
+                `;
+                feedbackGrid.appendChild(feedbackItem);
+            }
+            currentFeedbackIndex = (currentFeedbackIndex + 1) % feedbacks.length;
+        }
+
+        // 页面加载时初始化反馈
+        document.addEventListener('DOMContentLoaded', function() {
+            rotateFeedback();
+        });
+
+        function openMiniProgram() {
+            // 小程序链接
+            var miniProgramLink = "weixin://dl/business/?t=i3ALuBDNKNjrIGb";
+            
+            // 尝试打开小程序
+            window.location.href = miniProgramLink;
+            
+            // 如果无法打开小程序，可以提供一个提示
+            setTimeout(function() {
+                alert("请确保您已安装微信，并在微信中打开本页面以跳转到小程序。");
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
